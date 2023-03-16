@@ -1,4 +1,4 @@
-/** puts function */
+/** short description , main puts */
 #include <stdio.h>
 /**
  *main print string
