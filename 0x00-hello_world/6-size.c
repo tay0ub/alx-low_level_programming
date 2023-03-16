@@ -5,7 +5,8 @@
 #include <stdio.h>
 /**
  * main - print size
- * Return : 0
+ *
+ * Return: (0)
  */
 
 int main(void)
