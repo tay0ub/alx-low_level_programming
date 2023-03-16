@@ -1,6 +1,8 @@
 #include <stdio.h>
-/*
-*programe is like a building
+/**
+*programe
+*is like
+*a building
 */
 
 
