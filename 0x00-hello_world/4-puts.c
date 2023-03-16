@@ -1,4 +1,6 @@
-
+/**
+ * puts function
+ */
 #include <stdio.h>
 /**
  *main: print string
