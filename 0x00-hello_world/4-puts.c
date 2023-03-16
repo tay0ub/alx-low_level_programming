@@ -1,7 +1,12 @@
+
+/**
+ * this programme prints statement "Programming is like building a multilingual puzzle"
+ */
+
 #include <stdio.h>
 /**
 *main function is the main program
-*Retur value is what main returns
+*Return value is 0
 */
 
 
