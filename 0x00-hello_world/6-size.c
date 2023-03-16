@@ -1,4 +1,13 @@
+/*
+ * file : 6-size
+ */
+
 #include <stdio.h>
+/**
+ * main - print size
+ * Return : 0
+ */
+
 int main(void)
 {
 	printf("Size of a char: %zu byte(s)\n", sizeof(char));
