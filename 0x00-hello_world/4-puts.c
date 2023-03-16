@@ -1,7 +1,7 @@
-/** programming is like a building */
 #include <stdio.h>
 /**
-*programe
+*main function is the main program
+*Retur value is what main returns
 */
 
 
