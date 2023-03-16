@@ -1,13 +1,9 @@
 
-/**
- * this programme prints statement "Programming is like building a multilingual puzzle"
- */
-
 #include <stdio.h>
 /**
-*main function is the main program
-*Return value is 0
-*/
+ *main: print string
+ *Return: 0
+ */
 
 
 int main(void)
