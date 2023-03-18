@@ -1,15 +1,12 @@
 /*
  * task: 9
  */
-
 #include <stdio.h>
-
 /**
  * main - print single digit combinations numbers
  *
  * Return: Always 0
  */
-
 int main(void)
 {
 	int num;
