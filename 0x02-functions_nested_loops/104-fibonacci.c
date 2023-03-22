@@ -15,7 +15,7 @@ int main(void)
 	int c;
 	unsigned long f1 = 0, f2 = 1, s;
 	unsigned long f1_h1, f1_h2, f2_h1, f2_h2;
-	unsigned long half1, half2;
+	unsigned long h1, h2;
 
 	for (c = 0; c < 92; c++)
 	{
