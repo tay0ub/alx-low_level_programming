@@ -16,7 +16,7 @@ int main(void)
 
 	while (1)
 	{
-		fsu = f1 + f2;
+		fs = f1 + f2;
 		if (fs > 4000000)
 			break;
 
