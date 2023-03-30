@@ -5,7 +5,7 @@
  */
 
 /**
- * _strcat - concatenates two strings.
+ * _strncat - concatenates two strings.
  * @dest: the string wich will be concatenates into.
  * @src: the string wich will be concatenated in @dest.
  * @n: length.
