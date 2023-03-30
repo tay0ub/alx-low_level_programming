@@ -14,46 +14,44 @@
  * Return: r or 0
  */
 
-char *infinite_sum(char *n1, char *n2, char *r, int size_r)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int a = 0, b = 0, c, d, e, f, sum = 0;
+	int a, b, c, d, e, f;
 
-	while (*(n1 + a) != '\0')
-		a++;
-	while (*(n2 + b) != '\0')
-		b++;
-	if (a >= b)
-		d = a;
-	else
-		d = b;
-	if (size_r <= d + 1)
+	for (a = 0; n1[a]; a++)
+		;
+	for (b = 0; n2[b]; b++)
+		;
+	if (a > size_r || b > size_r)
+
 		return (0);
-	r[d + 1] = '\0';
-	a--, b--, size_r--;
-	e = *(n1 + a) - 48, f = *(n2 + b) - 48;
-	while (d >= 0)
+	e = 0;
+
+	for (a -= 1, b -= 1, c = 0; c < size_r - 1; a--, b--, c++)
 	{
-		c = e + f + sum;
-		if (c >= 10)
-			sum = c / 10;
-		else
-			sum = 0;
-		if (c > 0)
-		*(r + d) = (c % 10) + 48;
-		else
-			*(r + d) = '0';
-		if (a > 0)
-			a--, e = *(n1 + a) - 48;
-		else
-			e = 0;
-		if (b > 0)
-			b--, f = *(n2 + b) - 48;
-		else
-			f = 0;
-		d--, size_r--;
+		f = e;
+		if (a >= 0)
+			f += n1[a] - '0';
+		if (b >= 0)
+			f += n2[b] - '0';
+		if (a < 0 && b < 0 && f == 0)
+		{
+			break;
+		}
+		e = f / 10;
+		r[c] = f % 10 + '0';
 	}
-	if (*(r) == '0')
-		return (r + 1);
-	else
-		return (r);
+
+	r[c] = '\0';
+	if (a >= 0 || b >= 0 || e)
+		return (0);
+
+	for (c -= 1, d = 0; d < c; c--, d++)
+	{
+		e = r[c];
+		r[c] = r[d];
+		r[d] = e;
+	}
+
+	return (r);
 }
