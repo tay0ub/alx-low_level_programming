@@ -30,7 +30,7 @@ char *_strncat(char *dest, char *src, int n)
 		a++;
 	}
 	*str = '\0';
-	*src = str2;
+	src = str2;
 
 	return (dest);
 }
