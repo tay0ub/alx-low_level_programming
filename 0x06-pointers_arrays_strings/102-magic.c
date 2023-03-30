@@ -1,9 +1,5 @@
 #include <stdio.h>
 
-/*
- * task 10
- */
-
 int main(void)
 {
   int n;
