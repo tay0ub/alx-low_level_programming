@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 
 /*
  * task 5
@@ -7,7 +7,6 @@ include "main.h"
 /**
  * string_toupper - change all lowercase to uppercase
  * @n: pointer
- *
  * Return: n
  */
 
