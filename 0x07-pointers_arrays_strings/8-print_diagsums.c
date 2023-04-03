@@ -21,9 +21,9 @@ void print_diagsums(int *a, int size)
 
 	for (x = 0; x < size; x++)
 	{
-		y = y + a[x][x];
+		y = y + a[(x * 1) + (x * size)];
 
-		z = z + a[x][size - x - 1];
+		z = z + a[(size - 1) * (x + 1)];
 	}
 
 	printf("%d, %d\n", y, z);
