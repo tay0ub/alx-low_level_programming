@@ -21,19 +21,19 @@ int is_prime_number(int n)
 }
 
 /**
- * prim - prime num or not
+ * prime - prime num or not
  * @a: iterator 
  * @n: the number
  * Return: 1 if n is prime else 0
  */
 
-int prime(int i, int n)
+int prime(int a, int n)
 {
-	if (n == i)
+	if (n == a)
 		return (1);
 
-	else if ((n % i) == 0)
+	else if ((n % a) == 0)
 		return (0);
 
-	return (prime(i + 1, n));
+	return (prime(a + 1, n));
 }
