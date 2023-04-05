@@ -12,5 +12,7 @@ int is_prime_number(int n);
 int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int prime(int a, int n);
+int str(char *s, int a, int l);
+int len(int a, char *s);
 
 #endif
