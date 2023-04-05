@@ -27,13 +27,13 @@ int is_prime_number(int n)
  * Return: 1 if n is prime else 0
  */
 
-int prime(int a, int n)
+int prime(int i, int n)
 {
-	if (n == a)
+	if (n == i)
 		return (1);
 
-	else if ((n % a) == 0)
+	else if ((n % i) == 0)
 		return (0);
 
-	return (prime(a + 1, n));
+	return (prime(i + 1, n));
 }
