@@ -6,7 +6,7 @@
 
 /**
  * is_prime_number -  returns 1 if the input integer is a prime
- * 		      number, otherwise return 0
+ *			number, otherwise return 0
  * @n: the integer
  * Return: integer value
  */
@@ -22,7 +22,7 @@ int is_prime_number(int n)
 
 /**
  * prime - prime num or not
- * @a: iterator 
+ * @a: iterator
  * @n: the number
  * Return: 1 if n is prime else 0
  */
