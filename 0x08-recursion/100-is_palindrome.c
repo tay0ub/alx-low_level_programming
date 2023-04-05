@@ -11,54 +11,57 @@
  */
 
 int is_palindrome(char *s)
-{
-	int l;
 
-	l = len(0, s);
+{
+	int len;
+
+	len = _length(0, s);
 
 	if (*s == 0)
 		return (1);
 
 	else
-		return (str(s, 0, l));
+		return (_string(s, 0, len));
 }
 
 /**
- * str - check if the str is palindrome
+ * _string - check if the str is palindrome
  * @s: the string
- * @a: int
- * @l: length
+ * @x: int
+ * @len: length
  * Return: 0 or 1
  */
 
-int str(char *s, int a, int l)
+int _string(char *s, int x, int len)
+
 {
-	if (a == l)
+	if (x == len)
 		return (1);
 
 	else
 
 	{
-		if (s[a] == s[l])
-			return (str(s, a + 1, l - 1));
+		if (s[x] == s[len])
+			return (_string(s, x + 1, len - 1));
 	}
 
 	return (0);
 }
 
 /**
- * len - calcule the length
+ * _lenght - calcule the length
  * @s: the string
- * @a: int
+ * @y: int
  * Return: int
  */
 
-int len(int a, char *s)
+int _length(int y, char *s)
+
 {
-	if (s[a] != '\0')
-		return (len(a + 1), s);
+	if (s[y] != '\0')
+		return (_lenght(y + 1), s);
 
 	else
-		return (a);
-
+		return (y);
+		
 }
