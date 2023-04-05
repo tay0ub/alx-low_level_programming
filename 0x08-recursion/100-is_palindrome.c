@@ -4,6 +4,8 @@
  * task 7
  */
 
+int _length(int y, char *s);
+
 /**
  * is_palindrome - 1 if a string is a palindrome and 0 if not
  * @s: the string
